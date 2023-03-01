@@ -1,0 +1,69 @@
+.logo_imagen {
+    height: 90px;
+}
+
+.menucss {
+    text-decoration: none;
+    padding: 1rem;
+    color: #F64740;
+}
+
+.menucss:hover {
+    font-size: 1.3rem;
+    color: #ff6661;
+}
+
+.footercss{
+    width: 110px;
+}
+
+.imgredescss{
+    width: 25px;
+}
+
+.imgherocss{
+    width: 100%;
+}
+
+.rowcss{
+    padding-top: 110px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.botoncss{
+    background-color: #F64740;
+    border: none;
+}
+
+.botoncss a{
+    color: white;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .menucss {
+        font-size: 1rem;
+    }
+
+    .menucss:hover {
+        font-size: 1.05rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .menucss {
+        padding: 10px;
+    }
+}
