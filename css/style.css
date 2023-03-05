@@ -48,6 +48,11 @@ a{
     right: 1rem;
 }
 
+
+.imgtdcss{
+    height: 380px;
+}
+
 @media screen and (max-width: 992px) {
     .header {
         flex-direction: column;
@@ -61,6 +66,35 @@ a{
         font-size: 1.05rem;
     }
 }
+
+.customcontrolcss{
+    max-width: 400px;
+
+}
+
+.pasoscss{
+    width: 125px;
+}
+
+.infocss{
+    width: 100px;
+}
+
+.imgamigoscss{
+    max-width: 100%;
+    height: auto;
+
+}
+
+.titlecss{
+    background-color: #F64740;
+    width: 50%;
+    
+
+}
+
+
+
 
 @media screen and (max-width: 576px) {
     .menucss {
