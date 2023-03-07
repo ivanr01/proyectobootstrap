@@ -15,76 +15,80 @@
 
 
 <body>
-    <nav class="navbar">
 
-        <div class="container-xxl d-flex header fixed-top bg-white bg-opacity-75 py-2">
-            <div class="logo">
-                <a href="../index.html" class="navbar-brand"><img class="logo_imagen" src="../img/logo-superbank.png"
-                        alt=""></a>
+        <nav class="navbar sticky-top  py-0">
+
+            <div class="container-xxl d-flex header bg-white bg-opacity-75  py-2">
+                <div class="logo">
+                    <a href="../index.html" class="navbar-brand"><img class="logo_imagen"
+                            src="../img/logo-superbank.png" alt=""></a>
+                </div>
+                <div class="menu fs-5">
+                    <a class="menucss" href="./tarjeta-debito.html">Tarjeta debito</a>
+                    <a class="menucss" href="./prestamos.html">Prestamos</a>
+                    <a class="menucss" href="./promociones.html">Promociones</a>
+                </div>
             </div>
-            <div class="menu fs-5">
-                <a class="menucss" href="./tarjeta-debito.html">Tarjeta debito</a>
-                <a class="menucss" href="./prestamos.html">Prestamos</a>
-                <a class="menucss" href="./promociones.html">Promociones</a>
+
+        </nav>
+
+
+        <div class="container-sm p-1 d-flex align-items-center">
+            <div class="row d-flex align-items-center rowcss row-gap-4 justify-content-around mx-auto">
+
+                <div class="col-md-6 text-center">
+                    <h3 class="fw-bold p-4">Una cuenta que te devuelve el 4x1000</h3>
+                    <p class="fw-light fs-5">Obtenla ahora!</p>
+                    <input type="email" class="text-center form-control d-block mx-auto customcontrolcss" value=""
+                        placeholder="Correo electrónico">
+                    <button class="m-3  botoncss rounded-4 p-3 fw-bold"><a href="">Abrir cuenta</a></button>
+                </div>
+
+                <div class="col-md-6">
+                    <img class="imgtdcss d-block mx-auto img-fluid w-50" src="../img/tarjeta-debito.png" alt="">
+
+                </div>
             </div>
         </div>
 
-    </nav>
 
-
-    <div class="container-sm p-3">
-        <div class="row d-flex align-items-center rowcss row-gap-4 justify-content-around">
-
-            <div class="col-md-6 text-center">
-                <h3 class="fw-bold pb-3">Una cuenta que te devuelve el 4x1000</h3>
-                <p class="fw-light fs-5">Obtenla ahora!</p>
-                <input type="email" class="text-center form-control d-block mx-auto customcontrolcss" value=""
-                    placeholder="Correo electrónico">
-                <button class="m-3  botoncss rounded-4 p-3 fw-bold"><a href="">Abrir cuenta</a></button>
-            </div>
-
-            <div class="col-md-6">
-                <img class="imgtdcss d-block mx-auto" src="../img/tarjeta-debito.png" alt="">
+        <div class="container-sm">
+            <div class="row row-gap-4 p-3">
+                <div class="col-md">
+                    <h5 class="text-center fw-light">Descarga la app</h5>
+                    <img class="d-block mx-auto pasoscss p-3" src="../img/descarga.png" alt="">
+                </div>
+                <div class="col-md">
+                    <h5 class="text-center fw-light">Ingresa tu info</h5>
+                    <img class="d-block mx-auto pasoscss p-3" src="../img/input.png" alt="">
+                </div>
+                <div class="col-md">
+                    <h5 class="text-center fw-light">Espera 1 minuto</h5>
+                    <img class="d-block mx-auto pasoscss p-3" src="../img/tiempo.png" alt="">
+                </div>
+                <div class="col-md">
+                    <h5 class="text-center fw-light">Eso es todo!</h5>
+                    <img class="d-block mx-auto pasoscss p-3" src="../img/dinero.png" alt="">
+                </div>
+                <div class="col-md">
+                    <h5 class="text-center fw-light">Usa tu súpercuenta</h5>
+                    <img class="d-block mx-auto pasoscss p-3" src="../img/transferir.png" alt="">
+                </div>
 
             </div>
         </div>
-    </div>
 
-    <div class="container-sm pt-3">
-        <div class="row row-gap-4 p-3">
-            <div class="col-md">
-                <h5 class="text-center fw-light">Descarga la app</h5>
-                <img class="d-block mx-auto pasoscss p-3" src="../img/descarga.png" alt="">
-            </div>
-            <div class="col-md">
-                <h5 class="text-center fw-light">Ingresa tu info</h5>
-                <img class="d-block mx-auto pasoscss p-3" src="../img/input.png" alt="">
-            </div>
-            <div class="col-md">
-                <h5 class="text-center fw-light">Espera 1 minuto</h5>
-                <img class="d-block mx-auto pasoscss p-3" src="../img/tiempo.png" alt="">
-            </div>
-            <div class="col-md">
-                <h5 class="text-center fw-light">Eso es todo!</h5>
-                <img class="d-block mx-auto pasoscss p-3" src="../img/dinero.png" alt="">
-            </div>
-            <div class="col-md">
-                <h5 class="text-center fw-light">Usa tu súpercuenta</h5>
-                <img class="d-block mx-auto pasoscss p-3" src="../img/transferir.png" alt="">
-            </div>
 
-        </div>
-
-    </div>
 
     <div class="d-flex justify-content-center">
-        <h2 class="text-center p-3 mb-0 mt-5 text-white titlecss rounded-4 rounded-top-4">Conoce tus beneficios!</h2>
+        <button class="m-3  botoncss rounded-4 p-3 fw-bold"><a href="#beneficios">Mira todos los beneficios</a></button>
+        
 
     </div>
 
 
     <div class="container-sm p-5">
-        <div class="row align-items-center row-gap-4">
+        <div id="beneficios" class="row align-items-center row-gap-4">
 
             <div class="col-md">
                 <div class="row align-items-center row-gap-4">
@@ -104,7 +108,7 @@
                     <div class="col ">
                         <h5 class="text-center ">Obten rendimientos de hasta 7% efectivo anual</h5>
                     </div>
-                    
+
                     <!-- bg-danger-subtle  rounded-pill fs-5 p-2 -->
                 </div>
 
@@ -115,11 +119,11 @@
                     <div class="col ">
                         <h5 class="text-center">Retiros 100% gratis en cualquiera de nuestros cajeros</h5>
                     </div>
-                    
+
                 </div>
 
             </div>
-            
+
             <div class="col-md">
                 <img class="img-fluid imgamigoscss" src="../img/feliz.png" alt="">
 

@@ -25,9 +25,7 @@
     width: 100%;
 }
 
-.rowcss{
-    padding-top: 110px;
-}
+
 
 a{
     text-decoration: none;
@@ -36,6 +34,7 @@ a{
 .botoncss{
     background-color: #F64740;
     border: none;
+    color: white;
 }
 
 .botoncss a{
@@ -49,9 +48,7 @@ a{
 }
 
 
-.imgtdcss{
-    height: 380px;
-}
+
 
 @media screen and (max-width: 992px) {
     .header {
@@ -96,8 +93,20 @@ a{
 
 
 
+
+
+
 @media screen and (max-width: 576px) {
     .menucss {
         padding: 10px;
     }
+
+    .inlinecss{
+        display: inline;
+        width: auto;
+    }
+
+
+
+
 }

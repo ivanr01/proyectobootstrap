@@ -17,35 +17,36 @@
 <body>
     <!-- The navbar does not have to go inside a section -->
     <!-- we need to create a navbar class -->
-    <nav class="navbar">
+
 
         <!-- with container-fluid it's 100% at all breakpoints -->
         <!-- with container-xxl. it'll be 100% width until xxl, then a paddding and a margin is applied, this container has to contain all the navbar -->
         <!-- with container sm, it'll be 100% just in small screens, then it'll have a padding -->
 
-        <div class="container-xxl d-flex header fixed-top bg-white bg-opacity-75 py-2">
-            <!-- to create a logo -->
-            <div class="logo">
-                <a href="index.html" class="navbar-brand"><img class="logo_imagen" src="./img/logo-superbank.png"
-                        alt=""></a>
-            </div>
-            <div class="menu fs-5">
-                <a class="menucss" href="./pages/tarjeta-debito.html">Tarjeta debito</a>
-                <a class="menucss" href="./pages/prestamos.html">Prestamos</a>
-                <a class="menucss" href="./pages/promociones.html">Promociones</a>
-            </div>
-        </div>
+        <nav class="navbar sticky-top py-0">
 
-    </nav>
+            <div class="container-xxl d-flex header bg-white bg-opacity-75  py-2">
+                <div class="logo">
+                    <a href="../index.html" class="navbar-brand"><img class="logo_imagen" src="../img/logo-superbank.png"
+                            alt=""></a>
+                </div>
+                <div class="menu fs-5">
+                    <a class="menucss" href="./pages/tarjeta-debito.html">Tarjeta debito</a>
+                    <a class="menucss" href="./pages/prestamos.html">Prestamos</a>
+                    <a class="menucss" href="./pages/promociones.html">Promociones</a>
+                </div>
+            </div>
+    
+        </nav>
 
 
     <div class="container-sm p-3 pb-4">
         <div class="row d-flex align-items-center justify-content-center rowcss row-gap-4">
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <img class="rounded-5 imgherocss" src="./img/hero.gif" alt="">
             </div>
 
-            <div class="col-md-6 ps-xl-5">
+            <div class="col-md-7 ps-xl-5">
                 <h3 class=" fw-bold pb-3 ps-3">El banco que te devuelve plata y tiempo</h3>
                 <ul class="lh-lg fw-light">
                     <li>Una cuenta de ahorros con $0 costos de manejo</li>
@@ -60,12 +61,12 @@
     </div>
 
     <div class="container-sm p-3 pt-2">
-        <div class="row d-flex align-items-center justify-content-center row-gap-4">
-            <div class="col-md-6">
-                <img class="rounded-5 imgherocss" src="./img/hero-prestamo.jpg" alt="">
+        <div class="row d-flex align-items-center justify-content-center row-gap-1">
+            <div class="col-md-5">
+                <img class="rounded-5 imgherocss w-100" src="./img/hero-prestamo.jpg" alt="">
             </div>
 
-            <div class="col-md-6 ps-xl-5">
+            <div class="col-md-7 ps-xl-5">
                 <h3 class=" fw-bold pb-3 ps-3">Un crédito libre destino que te devuelve tiempo</h3>
                 <ul class="lh-lg fw-light">
                     <li>Un crédito libre destino que te devuelve tiempo</li>
