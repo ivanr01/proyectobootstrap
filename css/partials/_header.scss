@@ -1,0 +1,14 @@
+.logo_imagen {
+    height: 90px;
+}
+
+.menucss {
+    text-decoration: none;
+    padding: 1rem;
+    color: $colorPrincipal;
+
+    &:hover {
+        font-size: 1.3rem;
+        color: $colorPrincipal;
+    }
+}

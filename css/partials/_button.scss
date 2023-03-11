@@ -1,0 +1,15 @@
+.botoncss {
+    background-color: $colorPrincipal;
+    border: none;
+
+    & a{
+        color:white;
+    }
+
+    &:hover{
+        cursor: pointer;
+        -webkit-animation: jello-horizontal 0.9s both;
+        animation: jello-horizontal 0.9s both;
+    }
+
+}

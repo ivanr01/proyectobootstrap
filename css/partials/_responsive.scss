@@ -1,0 +1,37 @@
+@media screen and (max-width: 1000px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .menucss {
+        font-size: 1rem;
+        &:hover{
+            font-size: 1.05rem;
+        }
+    }
+
+    .botonmain {
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (max-width: 576px) {
+    .menucss {
+        padding: 10px;
+    }
+
+    .inlinecss {
+        display: inline;
+        width: auto;
+    }
+
+    .tdimagencss {
+        width: 75%;
+    }
+
+
+
+
+}
