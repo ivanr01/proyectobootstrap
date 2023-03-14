@@ -22,7 +22,6 @@ a {
 }
 .menucss:hover {
   font-size: 1.3rem;
-  color: #F64740;
 }
 
 .footercss {
@@ -103,6 +102,14 @@ a {
   .tdimagencss {
     width: 75%;
   }
+  .menucss {
+    text-decoration: none;
+    padding: 0, 5rem;
+    color: #F64740;
+  }
+  .menucss:hover {
+    font-size: 1rem;
+  }
 }
 @keyframes jello-horizontal {
   0% {
@@ -125,5 +132,49 @@ a {
   }
   100% {
     transform: scale3d(1, 1, 1);
+  }
+}
+.img_aliado {
+  animation: wobble-hor-bottom 0.8s both;
+}
+
+.img_aliado1 {
+  animation-delay: 1s;
+}
+
+.img_aliado2 {
+  animation-delay: 2s;
+}
+
+.img_aliado3 {
+  animation-delay: 3s;
+}
+
+.img_aliado4 {
+  animation-delay: 4s;
+}
+
+.img_aliado5 {
+  animation-delay: 5s;
+}
+@keyframes wobble-hor-bottom {
+  0%, 100% {
+    transform: translateX(0);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
   }
 }/*# sourceMappingURL=estilo.css.map */
