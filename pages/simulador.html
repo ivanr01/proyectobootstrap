@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Superbank</title>
+    <title>Tarjeta Debito - Superbank</title>
     <meta name="keywords" content="banco, ahorro, prestamo, inversion, rendimientos, colombia">
-    <meta name="description" content="Conoce tu súper cuenta y contáctanos para saber más de ti">
+    <meta name="description"
+        content="Conoce tu súper cuenta, pide tu tarjeta y usala en minutos. Sin filas, sin papeles">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
@@ -15,11 +16,11 @@
 </head>
 
 <body>
-    <nav class="navbar sticky-top py-0">
-        <div class="container-lg d-flex header bg-white bg-opacity-75 py-2">
+    <nav class="navbar sticky-top  py-0">
+        <div class="container-lg d-flex header bg-white bg-opacity-75  py-2">
             <div class="logo">
                 <a href="../index.html" class="navbar-brand"><img class="logo_imagen" src="../img/logo-superbank.png"
-                        alt="Logo SuperBank"></a>
+                        alt="Logo Superbank"></a>
             </div>
             <div class="menu fs-5">
                 <a class="menucss" href="./tarjeta-debito.html">Tarjeta debito</a>
@@ -27,25 +28,26 @@
                 <a class="menucss" href="./promociones.html">Promociones</a>
             </div>
         </div>
-    </nav>
 
+    </nav>
 
     <div class="container-sm p-3">
         <div class="d-flex justify-content-center">
             <h3 class=" fw-bold pb-3 p-3 text-center m-3  textoimportantecss rounded-4 p-3 fw-bold d-inline">
-                Contactanos, estamos
-                para ti 24/7</h3>
+                Simula tu inversión!
+            </h3>
         </div>
         <div class="row d-flex align-items-center justify-content-center rowcss row-gap-4">
             <div class="col-md-7">
                 <div class="container">
-                    <form>
+                    <form id="formulario">
                         <div class="row m-2 pt-4">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="name">Nombre:</label>
-                                    <input type="text" class="form-control" id="name" name="name">
+                                    <label for="nombre">Nombre:</label>
+                                    <input type="text" class="form-control" id="nombre" name="name">
                                 </div>
+
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -53,19 +55,22 @@
                                     <input type="text" class="form-control" id="apellido" name="apellido">
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="email">Correo electrónico:</label>
-                                <input type="email" class="form-control" id="email" name="email">
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Celular:</label>
-                                <input type="tel" class="form-control" id="phone" name="phone">
 
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="inversion">Inversión:</label>
+                                    <input type="number" class="form-control" id="inversion" name="inversion">
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="message">Mensaje:</label>
-                                <textarea class="form-control" id="message" name="message"></textarea>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="numeroDeDias">Numero de días:</label>
+                                    <input type="number" class="form-control" id="numeroDeDias" name="apellido">
+                                </div>
                             </div>
+
+
                         </div>
                         <div class="d-flex justify-content-center">
                             <button type="submit" class="m-3  botoncss rounded-4 p-3 fw-bold text-white">Enviar</button>
@@ -73,6 +78,8 @@
                     </form>
                 </div>
             </div>
+
+            <div id="contenedor"></div>
 
             <div class="col-md-5 p-4">
                 <img class="img-fluid" src="../img/contacto.png" alt="Personas contactando a Súper Bank">
@@ -82,19 +89,19 @@
 
     <div class="whatsapp">
         <a href="https://api.whatsapp.com/send/?phone=573188192444" target="_blank">
-            <img src="../img/whatsapp.png" alt="Icono de whatsapp">
+            <img src="../img/whatsapp.png" alt="Logo de whatsapp">
         </a>
     </div>
 
     <div class="container d-flex fs-5 justify-content-center align-items-center">
         <a class="menucss" href="./contacto.html">Contacto</a>
-        <a href="../index.html"><img class="footercss" src="../img/logo-s.png" alt="Logo de SuperBank"></a>
+        <a href="../index.html"><img class="footercss" src="../img/logo-s.png" alt="Logo Superbank"></a>
         <a class="menucss" href="./simulador.html">Invierte</a>
     </div>
 
     <div class="container-xxl d-flex gap-5 justify-content-center align-items-center p-3">
         <a href="https://www.facebook.com" target="_blank"><img class="imgredescss" src="../img/1.png"
-                alt="Logo de Facebook"></a>
+                alt="Logo de facebook"></a>
         <a href="https://www.instagram.com" target="_blank"><img class="imgredescss" src="../img/3.png"
                 alt="Logo de instagram"></a>
         <a href="https://www.twitter.com" target="_blank"><img class="imgredescss" src="../img/2.png"
@@ -104,6 +111,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+
+    <script src="../js/simulador.js"></script>
 </body>
 
 </html>
