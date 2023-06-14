@@ -32,7 +32,6 @@ const mostrarTarjetas = () => {
                 <p class="card-text">Valor a pagar: $${tarjeta.costoEnvio+tarjeta.costoManejo}</p>
 
                 <button id="boton${tarjeta.id}" class="m-3 botoncss rounded-4 p-3 fw-bold text-white">Adquirir</button>
-
             </div>
       </div>`
       contenedorTarjetas.appendChild(card);
@@ -41,14 +40,21 @@ const mostrarTarjetas = () => {
       const boton = document.getElementById(`boton${tarjeta.id}`);
       boton.addEventListener('click', () =>{
         agregarCarrito(tarjeta.id);
+        Toastify({
+            text: "La tarjeta se añadió a tu carrito de compras",
+            duration: 3000,
+            gravity: "top",
+            position: "right",
+            style: {
+            background: "#F64740"}
+          }).showToast();
       })
+
     })
 }
 
+
 mostrarTarjetas();
-
-
-
 
 
 
@@ -67,16 +73,12 @@ const agregarCarrito = (id) => {
 }
 
 
-
-
-
 const contenedorCarrito = document.getElementById("contenedorCarrito");
 const verCarrito = document.getElementById("verCarrito");
 
 verCarrito.addEventListener("click", () => {
     mostrarCarrito();
 })
-
 
 
 const mostrarCarrito = () => {
@@ -108,8 +110,6 @@ const mostrarCarrito = () => {
 }
 
 
-
-
 const eliminarDelCarrito = (id) => {
     const tarjeta = shoppingBag.find(tarjeta => tarjeta.id === id);
     const indice = shoppingBag.indexOf(tarjeta);
@@ -138,3 +138,42 @@ const eliminarTodoElCarrito = () => {
     shoppingBag = [];
     mostrarCarrito();
 }
+
+
+
+
+
+
+const input_currency = document.querySelector('#input_currency');
+const output_currency = document.querySelector('#output_currency');
+const input_amount = document.querySelector('#input_amount');
+const output_amount = document.querySelector('#output_amount');
+const exchange = document.querySelector('#exchange');
+const rate = document.querySelector('#rate');
+
+input_currency.addEventListener('change', compute);
+output_currency.addEventListener('change', compute);
+input_amount.addEventListener('input', compute);
+output_amount.addEventListener('input', compute);
+
+exchange.addEventListener('click', ()=>{
+    const temp = input_currency.value;
+    input_currency.value = output_currency.value;
+    output_currency.value= temp;
+    compute();
+});
+
+function compute(){
+    const input_currency1 = input_currency.value;
+    const output_currency1 = output_currency.value;
+
+    fetch(`https://api.exchangerate-api.com/v4/latest/${input_currency1}`)
+    .then(res => res.json())
+    .then(res => {
+        const new_rate = res.rates[output_currency1];
+        rate.innerText = `1 ${input_currency1} = ${new_rate} ${output_currency1}`
+        output_amount.value = (input_amount.value * new_rate).toFixed(2);
+    })
+}
+
+compute();
